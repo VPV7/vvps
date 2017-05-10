@@ -14,8 +14,12 @@ public class BlackBoxTesting {
 		List<Row> rows = new ArrayList<>();
 		rows.add(new Row(1142, 1060, 325, 201));
 		rows.add(new Row(863, 995, 98, 98));
+		rows.add(new Row(1065, 3205, 23, 162));
+		rows.add(new Row(554, 120, 0, 54));
+		rows.add(new Row(983, 2896, 120, 138));
+		rows.add(new Row(256, 485, 88, 61));
 
-		List<Double> result = MutlipleRegression.calculate(rows);
+		List<Double> result = MultipleRegression.calculate(rows);
 		
 		Assert.assertEquals(6.7013, result.get(0), 0.0001);
 		Assert.assertEquals(0.0784, result.get(1), 0.0001);
